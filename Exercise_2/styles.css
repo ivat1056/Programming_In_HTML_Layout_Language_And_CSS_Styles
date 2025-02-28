@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.about-container h2 {
+    position: absolute;
+    top: -50px; 
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 0; 
+}
+
+.about-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about-content {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-image {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+.about,
+.process {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.process h2 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.step {
+    text-align: center;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.step img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.step p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.step:hover p,
+.step:hover img {
+    color: #1ea896;
+    transform: scale(1.1);
+}
+
+.highlight {
+    color: #1ea896;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+.highlight-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight-step::after {
+    content: url('image/left-arrow.png');
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}

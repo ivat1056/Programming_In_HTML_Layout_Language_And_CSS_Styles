@@ -18,8 +18,6 @@ body {
     align-items: center;
   }
   
-
-
   .header {
     padding: 20px 0;
   }
@@ -101,7 +99,7 @@ body {
   
   .footer {
     background-color: #fcb13a;
-    padding: 8px 0; /* уменьшено */
+    padding: 8px 0;
   }
   
   .footer-container {

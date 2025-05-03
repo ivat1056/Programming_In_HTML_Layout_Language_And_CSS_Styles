@@ -10,7 +10,6 @@ body {
   color: #000;
 }
 
-/* HEADER */
 .main-header {
   background: #7a88ff;
   display: flex;
@@ -62,14 +61,12 @@ body {
   font-weight: bold;
 }
 
-/* Белая линия под шапкой */
 .header-line {
   height: 1px;
-  background-color: white;
+  background: #f4f7fe;
   opacity: 0.4;
 }
 
-/* HERO */
 .hero {
   position: relative;
   background: linear-gradient(to bottom, #7a88ff, #6b7dfb);
@@ -118,11 +115,10 @@ body {
   right: 20px;
 }
 
-/* MESSENGER SECTION */
 .messenger-section {
   position: relative;
   padding: 60px 40px;
-  background: white;
+  background: #f4f7fe;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +138,7 @@ body {
 }
 
 .messenger-card {
-  background: white;
+  background: #f4f7fe;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   padding: 16px;
@@ -161,7 +157,6 @@ body {
   line-height: 1.3;
 }
 
-/* VIBER CUSTOM CARD */
 .viber-box {
   width: 100%;
   max-width: 280px;
@@ -192,14 +187,13 @@ body {
 }
 
 .viber-bottom-half {
-  background: white;
+  background: #f4f7fe;
   color: black;
   padding: 20px;
   font-size: 14px;
   line-height: 1.5;
 }
 
-/* DETAILS BUTTON */
 .details-button {
   margin-top: 12px;
   padding: 8px 16px;
@@ -211,14 +205,12 @@ body {
   cursor: pointer;
 }
 
-/* Grid для остальных мессенджеров */
 .grid-messengers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1024px) {
   .main-header {
     flex-direction: column;
@@ -255,7 +247,6 @@ body {
 }
 
 
-/* Правильная линия под навигацией */
 .nav-line-wrapper {
   display: flex;
   justify-content: center;
@@ -271,10 +262,9 @@ body {
 }
 
 
-
 .about {
   padding: 100px 0;
-  background: white;
+  background: #f4f7fe;
 }
 
 .about-title {
@@ -284,7 +274,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* чёрная линия с отступами как у контейнера */
 .about-line.black-line {
   height: 1px;
   background: black;
@@ -300,7 +289,6 @@ body {
 }
 
 
-
 .about-line.black-line::after {
   content: "";
   display: block;
@@ -309,7 +297,6 @@ body {
   width: 100%;
 }
 
-/* верх: изображение + текст */
 .about-top {
   display: flex;
   flex-wrap: wrap;
@@ -340,7 +327,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* фичи */
 .about-features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -363,7 +349,6 @@ body {
   flex-shrink: 0;
 }
 
-/* кнопка */
 .about-button {
   background: #8f9aff;
   color: white;
@@ -376,11 +361,9 @@ body {
 }
 
 
-
-/* === РЕШЕНИЕ === */
 .solution {
   padding: 100px 0;
-  background: #fff;
+  background: #f4f7fe;
 }
 
 .solution-card {
@@ -396,7 +379,6 @@ body {
   border-radius: 12px;
 }
 
-/* Переиспользуемые стили (уже должны быть) */
 .container-wide {
   max-width: 1760px;
   margin: 0 auto;
@@ -407,6 +389,7 @@ body {
 .about-title {
   font-size: 48px;
   font-weight: 800;
+  padding: 0 40px;
   margin-bottom: 10px;
 }
 
@@ -424,9 +407,6 @@ body {
   background: black;
   width: 100%;
 }
-
-
-
 
 
 
@@ -458,7 +438,7 @@ body {
   opacity: 0.3;
 }
 
-/* Стрелки и точки под слайдером */
+
 .clients-controls {
   display: flex;
   justify-content: center;
@@ -493,16 +473,13 @@ body {
 
 
 
-
-
-/* Универсальный контейнер как в других секциях */
 .container {
   max-width: 1760px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
-/* Синий фон — вложенный, без внутренних отступов */
+
 .partnership {
   background: #7a88ff;
   border-radius: 8px;
@@ -511,7 +488,7 @@ body {
   width: 100%;
 }
 
-/* Всё остальное — как ранее */
+
 .partnership-inner {
   display: flex;
   gap: 60px;
@@ -558,12 +535,8 @@ body {
 }
 
 
-
-
-
-
 .news {
-  padding-top: 100px;  
+  padding: 100px 0;
 }
 
 .news-title {
@@ -575,40 +548,49 @@ body {
 .nav-line.black {
   height: 1px;
   background: black;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
+  max-width: 1760px;
+  padding: 0 40px;
+}
+
+.news-slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 40px;
+  max-width: 1760px;
+  margin: 0 auto;
 }
 
 .news-slider {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .news-card {
-  background: white;
+  background: #f4f7fe;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  width: 360px;
-  min-width: 300px;
-  flex: 0 0 auto;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  max-width: 420px;
 }
-
 
 .news-card img {
   width: 100%;
-  height: auto;
+  height: 280px;
   object-fit: cover;
 }
 
 .news-info {
   padding: 24px;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  justify-content: space-between;
 }
 
 .news-date {
@@ -620,7 +602,6 @@ body {
 .news-text {
   font-size: 16px;
   margin-bottom: 24px;
-  flex-grow: 1;
 }
 
 .news-btn {
@@ -629,8 +610,8 @@ body {
   background: transparent;
   color: #5d5efc;
   border-radius: 10px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
   align-self: flex-start;
   transition: 0.3s;
 }
@@ -643,10 +624,48 @@ body {
 .news-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
-  margin: 40px 0;
+  gap: 16px;
+  justify-content: flex-start;
+  padding-left: 24px;
 }
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #5d5efc;
+}
+
+.news-all-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-all-btn {
+  background: #5d5efc;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px; 
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.news-all-btn:hover {
+  background: #4c5be3;
+}
+
 
 .arrow {
   font-size: 24px;
@@ -672,20 +691,6 @@ body {
   background: #5d5efc;
 }
 
-.news-all-wrapper {
-  text-align: center;
-}
-
-.news-all-btn {
-  background: #5d5efc;
-  color: white;
-  border: none;
-  padding: 14px 28px;
-  font-size: 16px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
 
 .section-title {
   font-size: 48px;
@@ -699,8 +704,6 @@ body {
   margin-bottom: 40px;
   width: 100%;
 }
-
-
 
 
 .footer {

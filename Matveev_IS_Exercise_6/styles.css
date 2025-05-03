@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fe;
+  color: #000;
+}
+
+/* HEADER */
+.main-header {
+  background: #7a88ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  color: white;
+}
+
+.logo {
+  width: 32px;
+}
+
+.header-center {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 36px;
+  font-size: 16px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav span {
+  font-weight: bold;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.lang {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Белая линия под шапкой */
+.header-line {
+  height: 1px;
+  background-color: white;
+  opacity: 0.4;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background: linear-gradient(to bottom, #7a88ff, #6b7dfb);
+  color: white;
+  padding: 100px 60px;
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background: #8f9aff;
+  border: none;
+  padding: 16px 32px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.hero-arrow.left {
+  left: 20px;
+}
+
+.hero-arrow.right {
+  right: 20px;
+}
+
+/* MESSENGER SECTION */
+.messenger-section {
+  position: relative;
+  padding: 60px 40px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messenger-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr 2fr;
+  grid-gap: 30px;
+  align-items: start;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.messenger-card {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.messenger-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.messenger-card span {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+/* VIBER CUSTOM CARD */
+.viber-box {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  grid-row: span 2;
+}
+
+.viber-top-half {
+  background: linear-gradient(to bottom, #a384f7, #8665f4);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viber-top-half img {
+  width: 40px;
+}
+
+.viber-label {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.viber-bottom-half {
+  background: white;
+  color: black;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* DETAILS BUTTON */
+.details-button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #8f9aff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Grid для остальных мессенджеров */
+.grid-messengers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .main-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .messenger-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-messengers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arrow,
+  .hero-arrow {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .profile-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .main-nav {
+    gap: 24px;
+  }
+}

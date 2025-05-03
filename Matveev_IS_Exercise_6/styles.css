@@ -444,8 +444,23 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
+
+.clients-slider-wrapper {
+  padding: 40px 20px;
+  border: 2px dashed #a084ff;
+  border-radius: 12px;
+  margin-top: 40px;
+  overflow-x: auto;
+}
+
+.clients-slider {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 
 .arrow {
   background: none;
